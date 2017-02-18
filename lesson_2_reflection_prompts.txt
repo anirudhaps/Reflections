@@ -1,0 +1,8 @@
+**How is the staging area different from the working directory and the 
+  repository? What value do you think it offers?
+
+  The staging area lies in between working directory and repository. When we
+  have to commit some changes lying in one or more files. We have to do git add
+  of those files. This will add those files into the staging area. Now the 
+  staging area contains a set of files that together conprise a logical change.
+  This logical set of files will be commited together next.
