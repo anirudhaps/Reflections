@@ -6,3 +6,45 @@
   of those files. This will add those files into the staging area. Now the 
   staging area contains a set of files that together conprise a logical change.
   This logical set of files will be commited together next.
+
+**How can you use the staging area to make sure you have one commit per logical
+  change?
+
+  We can add all the files corresponding to one logical change to the staging 
+  area. This will ensure that when the next commit happens, one logical change
+  gets committed to the repository.
+
+**What are some situations when branches would be helpful in keeping your history
+  organized? How would branches help?
+
+  One of the situation is when we don't want a functionality to be commited in the
+  main branch because it is not required right now. To do so, we will create a new
+  branch, commit the functionality into it and now, only this new branch's git log
+  will have that commit. The master branch's git log will not have this commit.
+
+**How do the diagrams help you visualize the branch structure?
+  
+  The diagrams help in visualizing which commits are reachable in a particular 
+  branch. That is, when we checkout a particular branch, which commits will appear
+  in the git log output of that branch. Secondly, which commits will be unreachable
+  for any branch. Also, which commits require a separate branch to be created for
+  retaining those commits. Othewise those commits will be lost as soon as we 
+  checkout a named branch. This is because the git log output of no named branch 
+  will have that commit ID.
+
+**What is the result of merging two branches together? Why do we represent it in 
+  the diagram the way we do?
+
+  By merging two branches, we merge all the changes made in one branch into the
+  other. In the merged branch, git log shows the commit IDs in chronological 
+  order of all the branches (merged). The name of the merged branch will be the
+  same the one checked out at the time of merging the branches.
+
+**What are the pros and cons of Git’s automatic merging vs. always doing merges 
+  manually?
+
+  Automatic merging will save the effort involved in manual merging but it may
+  lead to merged results that may not work properly or that may not give the 
+  desired results. In manual merging, although some effort is involved but it
+  gives us scope and time to decide when to merge and what changes to keep in 
+  the merged commit.
