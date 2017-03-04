@@ -3,3 +3,12 @@
   I would like to use a remote repository if I need to share my changes to the public and
   get suggestions. Or If I want to allow others to collaborate with me on project, I will
   put that project on a remote repository and will make it accessible to all collaborators.
+
+**Why might you want to always pull changes manually rather than having Git automatically 
+  stay up-to-date with your remote repository?
+
+  We might want to always pull changes manually because it gives us control to decide 
+  whether or not to include changes present in remote repository into our local repository.
+  We may we working on our own version and we may not like to include changes that are
+  dynamically getting checked into the remote repository by other collaborators. As and 
+  when needed, we can manually pull the changes from remote repository.
