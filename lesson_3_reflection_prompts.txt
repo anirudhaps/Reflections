@@ -12,3 +12,13 @@
   We may we working on our own version and we may not like to include changes that are
   dynamically getting checked into the remote repository by other collaborators. As and 
   when needed, we can manually pull the changes from remote repository.
+
+**Describe the differences between forks, clones, and branches. When would you use one 
+  instead of another?
+
+  Forks are used to clone a repository within the github. That is, to clone someone's 
+  repository into your account. Clone is used to copy a repository from github to your
+  local environment. Branches are created on top of an existing commit. After creating
+  a new branch, if we push its changes to github remote repository, then only it will 
+  be available there. Branches are created when we want to work on some additional 
+  functionality parallelly with our main functionality.
